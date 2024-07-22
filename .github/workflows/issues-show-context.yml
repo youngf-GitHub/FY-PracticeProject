@@ -1,7 +1,7 @@
 
 name: issues-show-context
 
-on: event
+on: issues
   types: [opened, edited]
 
 jobs:
