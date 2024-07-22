@@ -1,0 +1,15 @@
+
+name: issues-show-context
+
+on: event
+  types: [opened, edited]
+
+jobs:
+
+  show-context:
+
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: show context
+        run: echo -e "${{ toJSON(github) }}"
