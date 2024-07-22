@@ -1,8 +1,10 @@
 
 name: issues-show-context
 
+run-name: issues-show-context
+
 on:
-  issues
+  issues:
     types: [opened, edited]
 
 jobs:
