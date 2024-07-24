@@ -25,7 +25,7 @@ jobs:
 
       - name: Cache Dependencies
         id: cache-npm
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{env.node-cache-name}}-${{ hashFiles('**/package-lock.json') }}
@@ -55,7 +55,7 @@ jobs:
 
       - name: Cache Dependencies
         id: cache-npm
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{env.node-cache-name}}-${{ hashFiles('**/package-lock.json') }}
@@ -80,7 +80,7 @@ jobs:
 
       - name: Cache Dependencies
         id: cache-npm
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{env.node-cache-name}}-${{ hashFiles('**/package-lock.json') }}
